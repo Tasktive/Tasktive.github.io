@@ -4,11 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="Assets/Tasktive-application.png"
+      type="image/x-icon"
+    />
+    <!-- Seo:start-->
+    <!-- Primary Meta Tags -->
+    <title>Tasktive - practical task manager application</title>
+    <meta
+      name="title"
+      content="Tasktive - practical task manager application"
+    />
+    <meta
+      name="description"
+      content="Tasktive is an opensource and free personal task-managing application"
+    />
+    <!-- Seo:end -->
     <link rel="stylesheet" href="Styles/main.css" />
-    <title>Learn JavaScript</title>
   </head>
   <body>
-    <!----code:start----->
+    <!----DOM:start----->
     <div class="app-main-container">
       <div class="my-task-app-container">
         <div class="header">
@@ -17,10 +33,15 @@
         </div>
         <div class="modal-container">
           <div class="modal">
-            <div class="modal-close-btn">X</div>
+            <div class="modal-close-btn">&times;</div>
             <div class="modal-content">
               <span class="modal-title">add new task</span>
-              <input type="text" class="modal-input" id="new-task-text" placeholder="task title">
+              <input
+                type="text"
+                class="modal-input"
+                id="new-task-text"
+                placeholder="task title"
+              />
               <button class="submit-new-task">add task</button>
             </div>
           </div>
@@ -29,22 +50,27 @@
           <div class="task-column">
             <div class="task-status-column" id="no-status-column">
               <div class="column-title">No status</div>
-              <div class="task-container" id="df14">
-                <button class="remove-task-btn">X</button>
-                <p class="task-inner-text">task inner text</p>
-              </div>
             </div>
             <div class="task-status-column" id="in-progress-column">
               <div class="column-title">In Progress</div>
             </div>
             <div class="task-status-column" id="task-complete-column">
-              <div class="column-title">Task Complete</div>
+              <div class="column-title">Complete</div>
             </div>
           </div>
         </div>
       </div>
+      <div class="footer">
+        &#9400;
+        <a target="_blank" href="https://github.com/Tasktive">Tasktive</a> 2022
+        by Mahdi<a
+          target="_blank"
+          href="https://github.com/Qiamast">Qiamast</a
+        >.All rights reserved
+      </div>
     </div>
-    <!----code:end------->
+    
+    <!----DOM:end------->
     <script src="./JavaScript/app.js"></script>
   </body>
 </html>

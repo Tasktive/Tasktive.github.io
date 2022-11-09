@@ -1,3 +1,11 @@
+/* Tasktive Color palate
+
+#AC2968
+#000000
+#FFFFFE
+#7189BC
+
+*/
 body{
   margin:0;
   padding:0;
@@ -7,28 +15,35 @@ body{
 button, input{
   font-family: cursive;
 }
+a{
+  font-style: normal;
+  text-decoration: none;
+  color: #7189BC;
+}
 /* ----------------------- */
 /* main app container style */
 .app-main-container{
-  background-color: cadetblue;
+  background-color: #7189BC;
   width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   font-size: 2.5vh;
   position: relative;
 
 }
 .my-task-app-container{
-  background-color: coral;
+  background-color: #ffff;
   width: 75vh;
   height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  border-radius: 2vh;
+  margin: 2vh 0vh;
 }
 /* header start */
 .header{
@@ -42,7 +57,7 @@ button, input{
 }
 .website-main-title{
   /* background-color: brown; */
-  width: 40vh;
+  width: 50vh;
   height: 8vh;
   display: flex;
   align-items: center;
@@ -57,10 +72,11 @@ button, input{
   border: none;
   outline: none;
   cursor: pointer;
-  background-color: #cfcfcf;
+  background-color: #AC2968;
   border-radius: 2vh;
   margin-bottom: 1vh;
   font-size: 2vh;
+  color: #fff;
 
 
 }
@@ -68,7 +84,7 @@ button, input{
 
 /* Modal start */
 .modal-container{
-  background-color: rgb(255, 255, 255);
+  background-color: #ffff;
   width: 100%;
   height: 100vh;
   position: absolute;
@@ -106,15 +122,21 @@ button, input{
   top: 0;
   cursor: pointer;
   user-select: none;
+  font-size: 5vh;
+  font-family: sans-serif;
+  color: #000;
+  opacity: 0.5;
 }
 .modal-content{
   width: 50vh;
   height: 50vh;
-  background-color: bisque;
+  background-color: #AC2968;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content:center;
+  color: #ffff;
+  border-radius: 2vh;
 }
 .modal-title{
   font-size: 3vh;
@@ -122,7 +144,7 @@ button, input{
   text-transform: capitalize;
 }
 .modal-input{
-  background-color: #ffffff;
+  background-color: #ffff;
   outline: none;
   border: none;
   width: 40vh;
@@ -130,10 +152,11 @@ button, input{
   margin: 5vh;
   padding: 1vh 2vh;
   font-size: 2.5vh;
+  border-radius: 2vh;
 }
 .submit-new-task{
   display: flex;
-  width: 30vh;
+  width: 25vh;
   height:5vh;
   padding: 2vh;
   border: none;
@@ -143,9 +166,10 @@ button, input{
   font-size: 2vh;
   text-transform: uppercase;
   border: 0.5vh solid #c1c1c1;
-  background-color: #eeeaea;
-  border-radius: 1vh;
+  background-color: #ffff;
+  border-radius: 2vh;
   cursor: pointer;
+  color:#000;
 }
 /* Modal end */
 
@@ -160,18 +184,17 @@ button, input{
  
 }
 .task-column{
-  background-color: rgb(148, 74, 218);
+  background-color: #fff;
   width: 70vh;
   height: 70vh;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  /* border: 1vh solid rgb(255, 255, 255); */
 }
 .task-status-column{
   width: 22vh;
-  background-color: #fff;
+  background-color: whitesmoke;
   height: 68vh;
   display: flex;
   flex-direction: column;
@@ -189,8 +212,8 @@ button, input{
   text-transform: capitalize;
 }
 .task-container{
-  background-color: crimson;
-  color: white;
+  background-color: #AC2968;
+  color: #fff;
   width: 20vh;
   height: 12vh;
   margin-top: 2vh;
@@ -200,7 +223,7 @@ button, input{
   position: relative;
   overflow: hidden;
   justify-content: space-evenly;
-  border-radius: 1vh;
+  border-radius: 2vh;
 }
 .remove-task-btn{
   width: 4vh;
@@ -213,7 +236,9 @@ button, input{
   user-select: none;
   cursor: pointer;
   color: #fff;
-  font-size: 2vh;
+  font-size: 3vh;
+  font-family: sans-serif;
+  opacity: 0.8;
 
 }
 .task-inner-text{
@@ -223,16 +248,34 @@ button, input{
   font-size: 2vh;
   display: flex;
   flex-direction: row;
-  color: black;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  text-align: left;
   padding-left: 1vh;
   color: #fff;
   font-size: 2vh;
-
-
-
+}
+/* task column body end */
+/* footer section */
+.footer{
+  /* background-color: #fff; */
+  width: 75vh;
+  height: 4vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: smaller;
+  font-weight: lighter;
+}
+.footer > a{
+  color: #fff;
+  text-decoration: underline;
+  margin: 0vh 0.5vh;
+  cursor: pointer;
+  
 }
 
-/* task column body end */
+/* end of style */
+

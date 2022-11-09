@@ -1,3 +1,4 @@
+// Tasktive App
 // select dom element
 let application_title = document.querySelector(".website-main-title")
 let add_new_task_button = document.querySelector(".add-new-task-btn")
@@ -21,16 +22,14 @@ let modal_input_value
 // call initialize function
 _initial()
 
-
-
-
+// :) i see you are here . please help to improve tasktive app
 
 // initial web page with first value
 function _initial() {
   // change document title
-  document.title = "MyTask Application"
+  document.title = "Tasktive - practical task manager application"
   // change application page title
-  application_title.innerHTML = "MyTask Application"
+  application_title.innerHTML = "Tasktive, practical task manager"
   // add rm functionally to task remove btn
   add_rm_event_task_remove_button()
   // add drag event to all task container in DOM
@@ -83,7 +82,7 @@ function create_new_task(input_value) {
   new_task_remove_btn.classList.add("remove-task-btn")
   new_task_inner_text.classList.add("task-inner-text")
   // add inner value to new task element
-  new_task_remove_btn.innerText = "X"
+  new_task_remove_btn.innerHTML = "&times;"
   new_task_inner_text.innerText = input_value
   // append new child element to nrw task container
   new_task_container.append(new_task_remove_btn, new_task_inner_text)
@@ -190,3 +189,4 @@ function add_drop_event_to_all_task_column() {
 
 
 }
+// Tasktive by Mahdi @Qiamast 2022
