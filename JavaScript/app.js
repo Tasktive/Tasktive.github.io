@@ -192,13 +192,33 @@ function add_rm_event_task_remove_button() {
     button.addEventListener("click", (event) => {
       // get remove task btn parent from btn click event
       button_parent_element = event.target.parentElement
+      // delete from local storage
+      removeTaskFromLocalStorage(button_parent_element.id)
       // clear remove button parent node element from DOM
       button_parent_element.remove()
+
 
     })
 
   })
 
+}
+
+// this function remove task from local storage array
+function removeTaskFromLocalStorage(id) {
+  // fetch task array from local storage
+  task_array = JSON.parse(localStorage.getItem("task"))
+  // for every task in task array if equal to task id  return task index
+  let index = task_array.findIndex((task) => {
+    return task.id === id
+    
+  })
+  // 
+  // slice array with selected index
+  task_array.splice(index, 1)
+  // save new array at local storage
+  localStorage.setItem("task", JSON.stringify(task_array))
+  
 }
 
 // generate random id for new task container
@@ -290,6 +310,6 @@ function changeTaskState(task_id, container_id) {
   task_array[changedTaskIndex].state = container_id
   // save new task array on the local storage
   localStorage.setItem("task", JSON.stringify(task_array))
-  
+
 
 }
